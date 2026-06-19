@@ -1,0 +1,9 @@
+services:
+  - type: web
+    name: bobsponge-server
+    env: node
+    buildCommand: npm install
+    startCommand: npm start
+    envVars:
+      - key: MONGO_URI
+        value: mongodb+srv://guygol10_db_user:zxgs9uyALbozyfJI@bobsponge.heiz2lj.mongodb.net/bobsponge?appName=Bobsponge
